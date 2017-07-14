@@ -21,9 +21,9 @@ public class SecondActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
            // Utils.exitApp(SecondActivity.this);
-            //  ToastUtils.showToast(SecondActivity.this,"退出");
-            //  tv_show.setText(TelephoneUtil.getSpreadtrumTeleInfo(SecondActivity.this).toString());
-               // AppUtil.shareToOtherApp(context,"标题","内容","对话框标题");
+              ToastUtils.showToast(SecondActivity.this,"退出");
+               tv_show.setText(TelephoneUtil.getSpreadtrumTeleInfo(SecondActivity.this).toString());
+                AppUtil.shareToOtherApp(context,"标题","内容","对话框标题");
                 tv_show.setText(AppUtil.getPackageInfo(SecondActivity.this).versionCode+"------"+ AppUtil.getPackageInfo(SecondActivity.this).versionName);
             }
         });
